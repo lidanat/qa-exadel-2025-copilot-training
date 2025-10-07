@@ -20,6 +20,16 @@ class LoginPage extends Page {
         return $('button[type="submit"]');
     }
 
+    // this is just for demonstration purposes
+    get btnLogout () {
+        return $('button[type="logout"]');
+    }
+
+    // this is just for demonstration purposes
+    get confirmLogout () {
+        return $('button[type="confirm"]');
+    }
+
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
@@ -28,6 +38,11 @@ class LoginPage extends Page {
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
+    }
+
+    async logout () {
+        await this.btnLogout.click();
+        await this.confirmLogout.click();
     }
 
     /**
