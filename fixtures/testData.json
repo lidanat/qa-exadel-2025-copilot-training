@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "testuser1",
+      "email": "test1@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "username": "testuser2",
+      "email": "test2@example.com",
+      "password": "password456"
+    }
+  ],
+  "testData": {
+    "validCredentials": {
+      "username": "standard_user",
+      "password": "secret_sauce"
+    },
+    "invalidCredentials": {
+      "username": "invalid_user",
+      "password": "invalid_password"
+    },
+    "alternateCredentials": {
+      "username": "problem_user",
+      "password": "secret_sauce"
+    }
+  }
+}

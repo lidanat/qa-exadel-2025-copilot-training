@@ -1,16 +1,28 @@
 {
-  "name": "qa-exadel-2025-copilot-training",
-  "type": "module",
-  "devDependencies": {
-    "@types/node": "^24.3.1",
-    "@wdio/cli": "^9.19.2",
-    "@wdio/local-runner": "^9.19.2",
-    "@wdio/mocha-framework": "^9.19.2",
-    "@wdio/spec-reporter": "^9.19.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
-  },
+  "name": "cypress-automation-framework",
+  "version": "1.0.0",
+  "description": "Cypress Test Automation Framework",
+  "main": "index.js",
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
-  }
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:edge": "cypress run --browser edge",
+    "cy:run:headless": "cypress run --headless",
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "cypress",
+    "testing",
+    "automation",
+    "e2e"
+  ],
+  "author": "",
+  "license": "MIT"
 }
