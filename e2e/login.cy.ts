@@ -21,7 +21,7 @@ describe('Login Functionality', () => {
     loginPage.login(validCredentials.username, validCredentials.password)
     
     homePage.isUserLoggedIn()
-    homePage.getWelcomeMessage().should('contain', 'Welcome')
+    homePage.getWelcomeMessage().should('contain', 'Products')
   })
 
   it('should show error with invalid credentials', function () {
@@ -31,7 +31,7 @@ describe('Login Functionality', () => {
     loginPage.login(invalidCredentials.username, invalidCredentials.password)
     
     loginPage.getErrorMessage().should('be.visible')
-    loginPage.getErrorMessage().should('contain', 'Invalid')
+    loginPage.getErrorMessage().should('contain', 'Username and password do not match any user in this service')
   })
 
   it('should login with dynamic test data', () => {
